@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA Grade Sync Solution - Product Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Texas Grade Sync Solution</h1>
+                <p class="hero-subtitle">Automating LMS-to-SIS Grade Transfer for Texas Educators</p>
+                <div class="hero-meta">
+                    <span class="meta-item">Product Recommendation</span>
+                    <span class="meta-divider">•</span>
+                    <span class="meta-item">January 2026</span>
+                    <span class="meta-divider">•</span>
+                    <span class="meta-item">V1 Launch: August 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#executive-summary" class="nav-link">Executive Summary</a>
+                <a href="#research" class="nav-link">User Research</a>
+                <a href="#evaluation" class="nav-link">Product Evaluation</a>
+                <a href="#recommendation" class="nav-link">Recommendation</a>
+                <a href="#project-plan" class="nav-link">Project Plan</a>
+                <a href="#risks" class="nav-link">Risks & Mitigation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Executive Summary -->
+    <section id="executive-summary" class="section">
+        <div class="container">
+            <h2 class="section-title">Executive Summary</h2>
+            <div class="exec-grid">
+                <div class="exec-card primary">
+                    <div class="exec-number">5+</div>
+                    <div class="exec-label">Hours Saved Per Teacher Weekly</div>
+                </div>
+                <div class="exec-card">
+                    <div class="exec-number">364,444</div>
+                    <div class="exec-label">Texas Teachers</div>
+                </div>
+                <div class="exec-card">
+                    <div class="exec-number">1,220</div>
+                    <div class="exec-label">School Districts</div>
+                </div>
+                <div class="exec-card">
+                    <div class="exec-number">$42M</div>
+                    <div class="exec-label">Annual Time Savings Value</div>
+                </div>
+            </div>
+
+            <div class="problem-solution">
+                <div class="ps-column">
+                    <h3 class="ps-title">The Problem</h3>
+                    <p>Teachers across Texas are spending excessive time on administrative tasks, manually transferring grades from their Learning Management System (LMS) to the Student Information System (SIS). This dual-entry requirement creates:</p>
+                    <ul class="ps-list">
+                        <li>5+ hours per week of manual data entry per teacher</li>
+                        <li>Increased risk of data entry errors</li>
+                        <li>Reduced time for instruction and student interaction</li>
+                        <li>Teacher burnout and retention challenges</li>
+                    </ul>
+                </div>
+                <div class="ps-column">
+                    <h3 class="ps-title">Our Solution</h3>
+                    <p><strong>Phased Approach:</strong></p>
+                    <p><strong>V1 (August 2025):</strong> Chrome Extension that provides immediate relief with local-first architecture, requiring no district API approvals</p>
+                    <p><strong>V2 (2027):</strong> Web Portal with official LTI 1.3 and OneRoster integrations for enterprise automation</p>
+                    <p class="highlight-box">This approach enables rapid teacher adoption while building toward sustainable enterprise integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Research Findings -->
+    <section id="research" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">User Research Findings</h2>
+            
+            <div class="research-intro">
+                <p class="intro-text">Interviews with 50 Texas teachers revealed distinct needs across grade levels, informing our product design decisions.</p>
+            </div>
+
+            <!-- Teacher Segments -->
+            <div class="teacher-segments">
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <h3>K-5 Teachers</h3>
+                        <span class="segment-count">~164,219 teachers</span>
+                    </div>
+                    <div class="segment-stats">
+                        <div class="stat">
+                            <span class="stat-number">30</span>
+                            <span class="stat-label">Students per class</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Grades per 6 weeks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Biweekly</span>
+                            <span class="stat-label">SIS entry frequency</span>
+                        </div>
+                    </div>
+                    <div class="segment-needs">
+                        <h4>Key Needs</h4>
+                        <ul>
+                            <li>Minimal new software learning curve</li>
+                            <li>Maximum time with students</li>
+                            <li>Simple, reliable process</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <h3>6-8 Teachers</h3>
+                        <span class="segment-count">~76,573 teachers</span>
+                    </div>
+                    <div class="segment-stats">
+                        <div class="stat">
+                            <span class="stat-number">90</span>
+                            <span class="stat-label">Students per teacher</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">9</span>
+                            <span class="stat-label">Grades per 6 weeks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Daily</span>
+                            <span class="stat-label">SIS entry frequency</span>
+                        </div>
+                    </div>
+                    <div class="segment-needs">
+                        <h4>Key Needs</h4>
+                        <ul>
+                            <li>Familiar environments (websites, LMS/SIS)</li>
+                            <li>Curve grading support for assessments</li>
+                            <li>Parent visibility priority</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="segment-card">
+                    <div class="segment-header">
+                        <h3>9-12 Teachers</h3>
+                        <span class="segment-count">~123,652 teachers</span>
+                    </div>
+                    <div class="segment-stats">
+                        <div class="stat">
+                            <span class="stat-number">120</span>
+                            <span class="stat-label">Students per teacher</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">16</span>
+                            <span class="stat-label">Grades per 9 weeks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Immediate</span>
+                            <span class="stat-label">SIS entry frequency</span>
+                        </div>
+                    </div>
+                    <div class="segment-needs">
+                        <h4>Key Needs</h4>
+                        <ul>
+                            <li>Time-saving above all else</li>
+                            <li>Curve grading for all assignments</li>
+                            <li>Real-time student/parent updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LMS & SIS Distribution -->
+            <div class="chart-section">
+                <h3 class="chart-title">Texas LMS Distribution by District Type</h3>
+                <div class="chart-container">
+                    <canvas id="lmsChart"></canvas>
+                </div>
+                <div class="chart-insights">
+                    <div class="insight">
+                        <strong>Key Insight:</strong> Google Classroom dominates rural districts (60%), while Canvas and Schoology are preferred in suburban/urban areas
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <h3 class="chart-title">Texas SIS Distribution by District Type</h3>
+                <div class="chart-container">
+                    <canvas id="sisChart"></canvas>
+                </div>
+                <div class="chart-insights">
+                    <div class="insight">
+                        <strong>Key Insight:</strong> Ascender dominates rural Texas (90%), while urban districts favor Skyward and Frontline TEAMS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Evaluation Framework -->
+    <section id="evaluation" class="section">
+        <div class="container">
+            <h2 class="section-title">Product Evaluation Framework</h2>
+            
+            <div class="framework-intro">
+                <p>Based on user research and market analysis, we evaluated five product options against critical success criteria:</p>
+            </div>
+
+            <div class="criteria-grid">
+                <div class="criteria-card">
+                    <div class="criteria-icon">👥</div>
+                    <h4>Teacher Adoption</h4>
+                    <p>Ease of use, familiarity, and minimal learning curve</p>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-icon">🔌</div>
+                    <h4>System Compatibility</h4>
+                    <p>Support for Texas's diverse LMS/SIS landscape</p>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-icon">⚡</div>
+                    <h4>Speed to Market</h4>
+                    <p>Ability to launch by August 2025</p>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-icon">🔒</div>
+                    <h4>Security & Compliance</h4>
+                    <p>FERPA compliance and Texas SB 820 requirements</p>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-icon">📈</div>
+                    <h4>Scalability</h4>
+                    <p>Path to enterprise adoption and automation</p>
+                </div>
+                <div class="criteria-card">
+                    <div class="criteria-icon">💰</div>
+                    <h4>Cost Efficiency</h4>
+                    <p>Development costs and deployment barriers</p>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-section">
+                <h3 class="comparison-title">Product Option Comparison</h3>
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Platform</th>
+                                <th>LMS/SIS Support</th>
+                                <th>Access Model</th>
+                                <th>Key Features</th>
+                                <th>Teacher Adoption</th>
+                                <th>Speed to Market</th>
+                                <th>Overall Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="recommended-row">
+                                <td><strong>Chrome Extension</strong></td>
+                                <td>Google Classroom, Canvas, Schoology / All major SIS</td>
+                                <td>Individual signup (no district approval needed)</td>
+                                <td>XML export, sync on demand, category/grade modification</td>
+                                <td><span class="score high">9/10</span></td>
+                                <td><span class="score high">9/10</span></td>
+                                <td><span class="score high">8.7/10</span></td>
+                            </tr>
+                            <tr>
+                                <td>Web Portal</td>
+                                <td>Canvas, Schoology / PowerSchool, Frontline, Skyward, Ascender</td>
+                                <td>Individual signup (district can deny)</td>
+                                <td>XML export, sync on demand, category modification</td>
+                                <td><span class="score medium">7/10</span></td>
+                                <td><span class="score high">8/10</span></td>
+                                <td><span class="score medium">7.3/10</span></td>
+                            </tr>
+                            <tr>
+                                <td>Embedded LMS App</td>
+                                <td>Schoology only / PowerSchool, Nearpod, Skyward</td>
+                                <td>Built into LMS (no additional access)</td>
+                                <td>Auto-sync, sync on demand, full modification suite</td>
+                                <td><span class="score high">8/10</span></td>
+                                <td><span class="score low">5/10</span></td>
+                                <td><span class="score medium">6.8/10</span></td>
+                            </tr>
+                            <tr>
+                                <td>iOS App</td>
+                                <td>Canvas, Schoology / Skyward, Frontline TEAMS</td>
+                                <td>District-level authorization required</td>
+                                <td>Auto-sync, sync on demand, grade modification</td>
+                                <td><span class="score low">4/10</span></td>
+                                <td><span class="score medium">6/10</span></td>
+                                <td><span class="score low">5.2/10</span></td>
+                            </tr>
+                            <tr>
+                                <td>Desktop App</td>
+                                <td>Canvas, Schoology, Google Classroom / All major SIS</td>
+                                <td>District-level authorization required</td>
+                                <td>XML export, auto-sync</td>
+                                <td><span class="score low">3/10</span></td>
+                                <td><span class="score medium">7/10</span></td>
+                                <td><span class="score low">5.0/10</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Recommendation -->
+    <section id="recommendation" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Product Recommendation</h2>
+            
+            <div class="recommendation-box">
+                <div class="rec-header">
+                    <h3>Recommended Approach: Phased Deployment</h3>
+                    <span class="rec-badge">Best Path Forward</span>
+                </div>
+                <div class="rec-content">
+                    <div class="phase-card phase-1">
+                        <div class="phase-number">V1</div>
+                        <div class="phase-details">
+                            <h4>Chrome Extension (August 2025)</h4>
+                            <p class="phase-description">Immediate teacher relief with local-first architecture</p>
+                            <ul class="phase-features">
+                                <li><strong>Target Users:</strong> Individual teachers across all grade levels</li>
+                                <li><strong>Core Value:</strong> Eliminates dual data entry without requiring district IT approval</li>
+                                <li><strong>Technical Approach:</strong> DOM scraping + local storage (FERPA-compliant by design)</li>
+                                <li><strong>Market Position:</strong> Fast teacher adoption, builds user base for V2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card phase-2">
+                        <div class="phase-number">V2</div>
+                        <div class="phase-details">
+                            <h4>Web Portal with LTI/OneRoster (2027)</h4>
+                            <p class="phase-description">Enterprise automation with official integrations</p>
+                            <ul class="phase-features">
+                                <li><strong>Target Users:</strong> District-wide deployments</li>
+                                <li><strong>Core Value:</strong> True auto-sync, district admin dashboards, 24/7 operation</li>
+                                <li><strong>Technical Approach:</strong> Official API integrations, LTI 1.3 Advantage, OneRoster</li>
+                                <li><strong>Market Position:</strong> Upgrade existing V1 users to enterprise platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why This Approach Wins -->
+            <div class="why-wins">
+                <h3>Why This Approach Wins</h3>
+                <div class="wins-grid">
+                    <div class="win-card">
+                        <h4>1. Addresses Teacher Retention Crisis</h4>
+                        <p>Provides immediate relief (5+ hours/week saved) without waiting for lengthy district procurement cycles. Teachers can start using V1 within minutes of installation.</p>
+                    </div>
+                    <div class="win-card">
+                        <h4>2. Bridges the API Gap</h4>
+                        <p>While TEA pushes Ed-Fi adoption, many legacy SIS systems lack write APIs. Our extension works today with existing systems, then scales to official integrations.</p>
+                    </div>
+                    <div class="win-card">
+                        <h4>3. Chromebook-Native</h4>
+                        <p>Texas is one of the largest Chromebook markets. Extension works seamlessly with existing 1:1 device infrastructure already deployed.</p>
+                    </div>
+                    <div class="win-card">
+                        <h4>4. FERPA-by-Design</h4>
+                        <p>V1's local-first architecture means no student PII stored on external servers, minimizing compliance burden and accelerating district approval for V2.</p>
+                    </div>
+                    <div class="win-card">
+                        <h4>5. Proven Market Strategy</h4>
+                        <p>Build teacher groundswell with V1, then approach districts with proven adoption data: "We already have 50 teachers using this—let's make it official and secure."</p>
+                    </div>
+                    <div class="win-card">
+                        <h4>6. Universal Compatibility</h4>
+                        <p>Chrome Extension supports Google Classroom (60% of rural districts), Canvas, Schoology, and all major SIS platforms from day one.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tradeoffs and Risks -->
+            <div class="tradeoffs-section">
+                <h3>Tradeoffs & Risk Mitigation</h3>
+                <div class="tradeoff-grid">
+                    <div class="tradeoff-item">
+                        <h4 class="tradeoff-title risk">Risk: Extension Fragility</h4>
+                        <p><strong>Issue:</strong> DOM scraping breaks when SIS vendors update their UI</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Build defensive selectors (text-based, not ID-based)</li>
+                            <li>Maintain test environments for all major SIS versions</li>
+                            <li>Implement automated regression testing</li>
+                            <li>Plan for August maintenance sprint (SIS updates typically summer)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tradeoff-item">
+                        <h4 class="tradeoff-title risk">Risk: IT Department Blockers</h4>
+                        <p><strong>Issue:</strong> District IT may block extension installations</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Minimalist permissions (only specific LMS/SIS domains)</li>
+                            <li>Publish security whitepaper for Texas IT directors</li>
+                            <li>Join TX Student Privacy Alliance (TX-NDPA)</li>
+                            <li>Offer V2 as "official upgrade" once V1 gains traction</li>
+                        </ul>
+                    </div>
+
+                    <div class="tradeoff-item">
+                        <h4 class="tradeoff-title risk">Risk: Session Management</h4>
+                        <p><strong>Issue:</strong> SIS sessions timeout during grade review/mapping</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Background "ping" to keep sessions alive</li>
+                            <li>Auto-save mapping state to local storage</li>
+                            <li>Clear warning when session expiry detected</li>
+                        </ul>
+                    </div>
+
+                    <div class="tradeoff-item">
+                        <h4 class="tradeoff-title opportunity">Tradeoff: V1 Manual vs V2 Automation</h4>
+                        <p><strong>V1 Limitation:</strong> Requires teacher to have both LMS and SIS open; not fully automatic</p>
+                        <p><strong>Strategic Value:</strong></p>
+                        <ul>
+                            <li>Teachers actually prefer review step for accountability</li>
+                            <li>Builds trust before introducing full automation</li>
+                            <li>Provides clear upgrade path to V2's auto-sync</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Plan -->
+    <section id="project-plan" class="section">
+        <div class="container">
+            <h2 class="section-title">V1 Project Plan: August 2025 Launch</h2>
+
+            <!-- Timeline -->
+            <div class="timeline-section">
+                <h3>Development Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker phase-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Feb - Mar 2025</div>
+                            <h4>Phase 1: Foundation & Research</h4>
+                            <ul>
+                                <li>Capture HTML structures for Canvas, Schoology, Google Classroom</li>
+                                <li>Document Skyward, Ascender, PowerSchool DOM patterns</li>
+                                <li>Build proof-of-concept scraping/injection script</li>
+                                <li>Draft Texas-specific privacy policy (SB 820 compliance)</li>
+                            </ul>
+                            <div class="timeline-owner">Owner: Lead Engineer + Product Manager</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker phase-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Apr - May 2025</div>
+                            <h4>Phase 2: Core Development</h4>
+                            <ul>
+                                <li>Build Chrome Extension (Manifest V3) with background service worker</li>
+                                <li>Develop injected modal UI for pre-sync review</li>
+                                <li>Implement name matching algorithm with manual override</li>
+                                <li>Add two-way write-back to LMS APIs (Canvas, Schoology)</li>
+                                <li>Create local storage encryption for mapping data</li>
+                            </ul>
+                            <div class="timeline-owner">Owner: Full-Stack Engineer + Frontend Developer</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker phase-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">June 2025</div>
+                            <h4>Phase 3: Texas-Specific Features</h4>
+                            <ul>
+                                <li>Build configurable XML export for Ascender compatibility</li>
+                                <li>Implement grade weighting and category modification</li>
+                                <li>Handle edge cases (excused grades, missing flags, null vs 0)</li>
+                                <li>Add grading period validation (prevent closed-period sync)</li>
+                            </ul>
+                            <div class="timeline-owner">Owner: Lead Engineer + QA Lead</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker phase-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">July 2025</div>
+                            <h4>Phase 4: Testing & Compliance</h4>
+                            <ul>
+                                <li>Beta testing with 5-10 Texas teachers (summer school)</li>
+                                <li>Regression testing across all SIS/LMS combinations</li>
+                                <li>Security audit and TX-NDPA documentation</li>
+                                <li>Chrome Web Store submission (July 15)</li>
+                            </ul>
+                            <div class="timeline-owner">Owner: QA Lead + Product Manager</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker launch-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">August 1, 2025</div>
+                            <h4>Phase 5: Launch & Support</h4>
+                            <ul>
+                                <li>Public release via Chrome Web Store</li>
+                                <li>Teacher onboarding during in-service week</li>
+                                <li>24/7 support monitoring for back-to-school rush</li>
+                                <li>Hotfix deployment capability for urgent issues</li>
+                            </ul>
+                            <div class="timeline-owner">Owner: Full Team + Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Structure -->
+            <div class="team-section">
+                <h3>Team Structure & Roles</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-role">Lead Full-Stack Engineer</div>
+                        <div class="team-count">1 FTE</div>
+                        <div class="team-focus">
+                            <strong>Focus:</strong> Chrome Extension architecture, Manifest V3, DOM scraping resilience
+                        </div>
+                        <div class="team-skills">
+                            <strong>Required Skills:</strong>
+                            <ul>
+                                <li>JavaScript/TypeScript expertise</li>
+                                <li>Chrome Extension API mastery</li>
+                                <li>Canvas/Schoology API experience</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-role">Frontend/Extension Developer</div>
+                        <div class="team-count">1 FTE</div>
+                        <div class="team-focus">
+                            <strong>Focus:</strong> Injected modal UI, grade review interface, user experience
+                        </div>
+                        <div class="team-skills">
+                            <strong>Required Skills:</strong>
+                            <ul>
+                                <li>React or vanilla JS UI development</li>
+                                <li>Shadow DOM techniques</li>
+                                <li>Responsive design for various SIS interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-role">Product Manager / QA Lead</div>
+                        <div class="team-count">1 FTE</div>
+                        <div class="team-focus">
+                            <strong>Focus:</strong> Texas education domain expertise, edge case identification, testing coordination
+                        </div>
+                        <div class="team-skills">
+                            <strong>Required Skills:</strong>
+                            <ul>
+                                <li>Understanding of PEIMS/TSDS requirements</li>
+                                <li>Experience with Texas SIS systems</li>
+                                <li>Manual testing across platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-role">UI/UX Designer</div>
+                        <div class="team-count">0.5 FTE (Contract)</div>
+                        <div class="team-focus">
+                            <strong>Focus:</strong> Pre-sync review modal design, teacher workflow optimization
+                        </div>
+                        <div class="team-skills">
+                            <strong>Required Skills:</strong>
+                            <ul>
+                                <li>EdTech UX experience</li>
+                                <li>Data table/grid design</li>
+                                <li>Minimizing teacher cognitive load</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Stakeholders -->
+            <div class="stakeholders-section">
+                <h3>Key Stakeholders</h3>
+                <div class="stakeholder-grid">
+                    <div class="stakeholder-card">
+                        <h4>TEA Leadership</h4>
+                        <ul>
+                            <li><strong>Role:</strong> Strategic direction, state policy alignment</li>
+                            <li><strong>Engagement:</strong> Monthly progress updates, policy guidance</li>
+                            <li><strong>Key Contact:</strong> Commissioner's office, Data Strategy team</li>
+                        </ul>
+                    </div>
+
+                    <div class="stakeholder-card">
+                        <h4>Regional Education Service Centers (ESCs)</h4>
+                        <ul>
+                            <li><strong>Role:</strong> SIS support coordination (especially Ascender)</li>
+                            <li><strong>Engagement:</strong> Technical validation, pilot district recruitment</li>
+                            <li><strong>Key Contact:</strong> Technology directors at ESC Region 10, 13, 20</li>
+                        </ul>
+                    </div>
+
+                    <div class="stakeholder-card">
+                        <h4>Texas Computer Cooperative (TCC)</h4>
+                        <ul>
+                            <li><strong>Role:</strong> Ascender system owner, largest SIS in rural Texas</li>
+                            <li><strong>Engagement:</strong> Technical documentation, future API discussions</li>
+                            <li><strong>Key Contact:</strong> TCC technical team</li>
+                        </ul>
+                    </div>
+
+                    <div class="stakeholder-card">
+                        <h4>Pilot District Partners</h4>
+                        <ul>
+                            <li><strong>Role:</strong> Beta testing, feedback, case studies</li>
+                            <li><strong>Engagement:</strong> Weekly during July testing phase</li>
+                            <li><strong>Target:</strong> 3-5 districts representing rural, suburban, urban</li>
+                        </ul>
+                    </div>
+
+                    <div class="stakeholder-card">
+                        <h4>LMS Vendors (Canvas, Schoology)</h4>
+                        <ul>
+                            <li><strong>Role:</strong> API documentation, partnership discussions for V2</li>
+                            <li><strong>Engagement:</strong> Technical support channels, developer relations</li>
+                        </ul>
+                    </div>
+
+                    <div class="stakeholder-card">
+                        <h4>Texas Student Privacy Alliance</h4>
+                        <ul>
+                            <li><strong>Role:</strong> Privacy compliance certification</li>
+                            <li><strong>Engagement:</strong> TX-NDPA signing, privacy policy review</li>
+                            <li><strong>Timeline:</strong> Complete by June 2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Milestones -->
+            <div class="milestones-section">
+                <h3>Critical Milestones & Success Metrics</h3>
+                <table class="milestones-table">
+                    <thead>
+                        <tr>
+                            <th>Milestone</th>
+                            <th>Date</th>
+                            <th>Success Criteria</th>
+                            <th>Owner</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>POC Complete</td>
+                            <td>March 15, 2025</td>
+                            <td>Successful scrape + inject demo for 3 SIS platforms</td>
+                            <td>Lead Engineer</td>
+                        </tr>
+                        <tr>
+                            <td>Alpha Build</td>
+                            <td>May 1, 2025</td>
+                            <td>Core extension with all primary features functional</td>
+                            <td>Full-Stack Team</td>
+                        </tr>
+                        <tr>
+                            <td>Beta Release</td>
+                            <td>July 1, 2025</td>
+                            <td>10 teachers successfully syncing grades in production</td>
+                            <td>Product Manager</td>
+                        </tr>
+                        <tr>
+                            <td>Chrome Store Approval</td>
+                            <td>July 25, 2025</td>
+                            <td>Extension published and available for download</td>
+                            <td>Lead Engineer</td>
+                        </tr>
+                        <tr>
+                            <td>V1 Public Launch</td>
+                            <td>August 1, 2025</td>
+                            <td>Available to all Texas teachers</td>
+                            <td>Full Team</td>
+                        </tr>
+                        <tr>
+                            <td>Initial Adoption</td>
+                            <td>September 1, 2025</td>
+                            <td>100+ active teacher users across 10+ districts</td>
+                            <td>Product Manager</td>
+                        </tr>
+                        <tr>
+                            <td>V2 Planning</td>
+                            <td>October 2025</td>
+                            <td>V2 roadmap finalized based on V1 feedback</td>
+                            <td>TEA + Product Manager</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risks and Considerations -->
+    <section id="risks" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Additional Considerations & Risks</h2>
+
+            <div class="risk-category">
+                <h3>Regulatory & Compliance Risks</h3>
+                <div class="risk-items">
+                    <div class="risk-item high-priority">
+                        <div class="risk-header">
+                            <h4>Texas Privacy Framework (SB 820 & HB 3834)</h4>
+                            <span class="risk-level high">High Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Extension flagged by district cybersecurity coordinators without proper TX-RAMP or privacy documentation</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Join TX Student Privacy Alliance and sign TX-NDPA by June 2025</li>
+                            <li>Create detailed "Security for Texas IT Directors" whitepaper</li>
+                            <li>Emphasize zero-knowledge, local-first architecture in all materials</li>
+                            <li>For V2, begin TX-RAMP Level 1 certification process</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>PEIMS/TSDS Data Integrity</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Synced grades cause errors in state reporting if grading periods don't align</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Implement grading period validation (read SIS calendar before allowing sync)</li>
+                            <li>Display clear warnings for closed grading periods</li>
+                            <li>Partner with ESCs to validate against PEIMS requirements</li>
+                            <li>Build "test mode" for IT directors to verify data flow before production use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-category">
+                <h3>Technical Risks</h3>
+                <div class="risk-items">
+                    <div class="risk-item high-priority">
+                        <div class="risk-header">
+                            <h4>SIS/LMS Platform Updates</h4>
+                            <span class="risk-level high">High Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Summer 2025 SIS updates break DOM scraping selectors</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Establish test accounts with all major vendors</li>
+                            <li>Monitor vendor release notes and beta programs</li>
+                            <li>Build automated regression test suite</li>
+                            <li>Reserve August 2025 "maintenance sprint" for emergency fixes</li>
+                            <li>Implement defensive coding: text-based selectors, multiple fallback paths</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>Chrome Extension Manifest V3 Deprecations</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Google deprecates Manifest V2; V3 restrictions limit functionality</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Build exclusively on Manifest V3 from day one</li>
+                            <li>Use service workers instead of background pages</li>
+                            <li>Test against Chromium beta channel for early warning</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>Data Synchronization Conflicts</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Network failures during two-way write create LMS/SIS divergence</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Implement atomic transactions (all-or-nothing writes)</li>
+                            <li>Add retry logic with exponential backoff</li>
+                            <li>Show clear success/failure indicators to teachers</li>
+                            <li>Maintain local transaction log for troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-category">
+                <h3>Market & Adoption Risks</h3>
+                <div class="risk-items">
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>District IT Blockers</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Districts use allowlist policies that prevent extension installation</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Request only minimal, specific permissions (not all_urls)</li>
+                            <li>Create IT director approval toolkit (security docs, demo video)</li>
+                            <li>Offer to present at ESC technology coordinator meetings</li>
+                            <li>Position V2 as "official district solution" for locked-down environments</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>EMAT Procurement Timing</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> August 2025 launch misses April/May district budget cycle</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>V1 offered free or low-cost to teachers directly ($5-10/mo)</li>
+                            <li>Build groundswell of users for district sales pitch in 2026</li>
+                            <li>Apply for Region 10 ESC cooperative purchasing in early 2026</li>
+                            <li>Position as "teacher retention investment" (easier budget justification)</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item low-priority">
+                        <div class="risk-header">
+                            <h4>Teacher Resistance to Change</h4>
+                            <span class="risk-level low">Low Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Teachers stick with manual processes due to familiarity</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Partner with teacher influencers and EdTech coordinators</li>
+                            <li>Create 2-minute walkthrough videos</li>
+                            <li>Emphasize "try it once" with easy uninstall</li>
+                            <li>Showcase time savings with concrete data (X hours saved per week)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="risk-category">
+                <h3>V2 Transition Risks</h3>
+                <div class="risk-items">
+                    <div class="risk-item high-priority">
+                        <div class="risk-header">
+                            <h4>LTI 1.3 Certification Timeline</h4>
+                            <span class="risk-level high">High Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> 1EdTech certification takes 6-12 months, delaying V2 launch</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Begin 1EdTech membership during V1 development (Q2 2025)</li>
+                            <li>Start certification process in Q4 2025</li>
+                            <li>Use V1 adoption data to prioritize LMS partnerships</li>
+                            <li>Consider Edlink/Clever integration as interim step</li>
+                        </ul>
+                    </div>
+
+                    <div class="risk-item medium-priority">
+                        <div class="risk-header">
+                            <h4>V1 to V2 User Migration</h4>
+                            <span class="risk-level medium">Medium Priority</span>
+                        </div>
+                        <p><strong>Risk:</strong> Teachers resist moving from free V1 to paid V2</p>
+                        <p><strong>Mitigation:</strong></p>
+                        <ul>
+                            <li>Keep V1 extension as free tier (manual sync)</li>
+                            <li>Position V2 as "premium" with auto-sync and support</li>
+                            <li>Offer grandfathered pricing for early V1 adopters</li>
+                            <li>Make migration seamless (import V1 settings to V2)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Factors -->
+            <div class="success-factors">
+                <h3>Critical Success Factors</h3>
+                <div class="success-grid">
+                    <div class="success-card">
+                        <div class="success-number">1</div>
+                        <h4>Teacher-Centric Design</h4>
+                        <p>Every feature decision must prioritize reducing teacher clicks and cognitive load. If it takes longer than manual entry, it will fail.</p>
+                    </div>
+                    <div class="success-card">
+                        <div class="success-number">2</div>
+                        <h4>Regression Testing Discipline</h4>
+                        <p>Weekly automated tests across all SIS/LMS combinations. One broken integration can destroy teacher trust.</p>
+                    </div>
+                    <div class="success-card">
+                        <div class="success-number">3</div>
+                        <h4>Texas-Specific Compliance</h4>
+                        <p>Proactive engagement with TX Student Privacy Alliance and ESCs. Privacy compliance is table stakes, not a nice-to-have.</p>
+                    </div>
+                    <div class="success-card">
+                        <div class="success-number">4</div>
+                        <h4>Rapid Support Response</h4>
+                        <p>During August 2025 back-to-school period, support must be 24/7. First impression is everything for teacher adoption.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Impact -->
+            <div class="financial-impact">
+                <h3>Financial Impact & ROI</h3>
+                <div class="financial-grid">
+                    <div class="financial-card">
+                        <h4>Teacher Time Savings</h4>
+                        <div class="financial-calc">
+                            <div class="calc-row">
+                                <span>364,444 Texas teachers</span>
+                                <span>×</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>5 hours saved per week</span>
+                                <span>×</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>36 weeks per year</span>
+                                <span>×</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>$35/hour (avg teacher rate)</span>
+                                <span>=</span>
+                            </div>
+                            <div class="calc-result">
+                                <strong>$2.3 Billion Annual Value</strong>
+                            </div>
+                        </div>
+                        <p class="financial-note">Even 2% adoption saves Texas $46M annually in teacher time</p>
+                    </div>
+
+                    <div class="financial-card">
+                        <h4>V1 Development Cost</h4>
+                        <ul class="cost-breakdown">
+                            <li>4 FTE team × 6 months: <strong>$300K</strong></li>
+                            <li>Infrastructure & tools: <strong>$20K</strong></li>
+                            <li>Compliance & legal: <strong>$30K</strong></li>
+                            <li>Beta testing & support: <strong>$25K</strong></li>
+                            <li><strong>Total V1 Investment: $375K</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="financial-card">
+                        <h4>Path to Sustainability</h4>
+                        <p><strong>V1 Revenue Model:</strong></p>
+                        <ul>
+                            <li>Free tier: Basic sync features</li>
+                            <li>Premium: $10/month (advanced features)</li>
+                            <li>1,000 premium users = $120K annual recurring revenue</li>
+                        </ul>
+                        <p><strong>V2 Enterprise Model:</strong></p>
+                        <ul>
+                            <li>District licensing: $2-5 per student/year</li>
+                            <li>10 mid-size districts (50K students) = $250K-625K ARR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="section conclusion">
+        <div class="container">
+            <div class="conclusion-content">
+                <h2>Moving Forward</h2>
+                <p class="conclusion-text">The Chrome Extension + Web Portal phased approach represents the fastest, lowest-risk path to providing immediate relief to Texas teachers while building toward sustainable enterprise automation.</p>
+                
+                <div class="next-steps">
+                    <h3>Immediate Next Steps</h3>
+                    <ol class="next-steps-list">
+                        <li><strong>Secure Funding:</strong> $375K for V1 development and launch</li>
+                        <li><strong>Recruit Core Team:</strong> 3.5 FTE by February 2025</li>
+                        <li><strong>Establish Partnerships:</strong> Connect with TCC, ESCs, and pilot districts</li>
+                        <li><strong>Begin Compliance:</strong> Join TX Student Privacy Alliance, initiate TX-NDPA process</li>
+                        <li><strong>Set Up Infrastructure:</strong> Development environments, SIS/LMS test accounts</li>
+                    </ol>
+                </div>
+
+                <div class="conclusion-cta">
+                    <p><strong>With your approval, we can begin development in February 2025 and deliver immediate value to Texas teachers by August 2025.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Texas Grade Sync Solution | Product Recommendation for TEA Commissioner | January 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
